@@ -1,0 +1,27 @@
+* {
+  list-style: none;
+}
+
+header {
+  background-color: green;
+  color: white;
+}
+
+.azienda {
+  color: purple;
+}
+
+.azienda a {
+  color: black;
+  text-decoration: none;
+}
+
+.azienda span {
+  color: blue;
+}
+
+footer {
+  background-color: red;
+  color: white;
+}
+

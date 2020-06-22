@@ -2,17 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::get('/', 'TaskController@index')->name("home");
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/showTask/{id}', 'TaskController@show')->name("showTask");
+// crea task
+Route::get('/createTask', 'TaskController@create')->name("createTask");
+
+Route::post('/storeTask', 'TaskController@store')->name("storeTask");
+//
+// aggiorna task
+Route::get('/editTask/{id}', 'TaskController@edit')->name("editTask");
+
+Route::post('/updateTask/{id}', 'TaskController@update')->name("updateTask");
+
+Route::get('/destroyTask/{id}', 'TaskController@destroy')->name("destroyTask");
