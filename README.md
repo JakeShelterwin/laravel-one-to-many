@@ -14,4 +14,6 @@ Task:
 - description
 - deadline
 N.B.: naturalmente ad ogni entita' va aggiunto il necessario per le chiavi primarie e le chiavi esterne
+
+
 BONUS: creare il necessario anche per eseguire update + delete
