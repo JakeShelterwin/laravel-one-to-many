@@ -17,3 +17,26 @@ N.B.: naturalmente ad ogni entita' va aggiunto il necessario per le chiavi prima
 
 
 BONUS: creare il necessario anche per eseguire update + delete
+
+
+		
+PARTE 2
+GOAL: continuando l'esercizio inizito ieri, definire index + edit aggiungendo relazione molti-a-molti tra employee e location. Definire il db come segue:
+Location <-N---M-> Employee <-1---N-> Task
+Per ogni location 0, 1 o piu' employee; per ogni employee 0, 1 o piu' location
+Per ogni employee diversi tasks, per ogni task esattamente un employee
+Location:
+- street
+- city
+- state
+Employee:
+- firstname
+- lastname
+- dateOfBirth
+- role
+Task:
+- name
+- description
+- deadline
+N.B.: naturalmente ad ogni entita' va aggiunto il necessario per le chiavi primarie e le chiavi esterne + tabella ponte tra location e employee
+BONUS: creare il necessario anche per eseguire update + delete
