@@ -17,7 +17,7 @@
         <label for="description">Descrizione</label>
         <input type="text" name="description" value="{{old("description", $task["description"])}}">
         <br>
-        <label for="deadline">Scadenza</label>
+        <label for="deadline">Scadenza (YY-MM-DD)</label>
         <input type="text" name="deadline" value="{{old("deadline", $task["deadline"])}}">
         <br>
         <label for="employee_id">Employee</label>

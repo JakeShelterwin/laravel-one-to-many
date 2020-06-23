@@ -17,7 +17,7 @@
         <label for="lastName">Cognome</label>
         <input type="text" name="lastName" value="{{old("lastName", $employee["lastName"])}}">
         <br>
-        <label for="DateOfBirth">Data di nascita (Y-M-D)</label>
+        <label for="DateOfBirth">Data di nascita (YY-MM-DD)</label>
         <input type="text" name="DateOfBirth" value="{{old("DateOfBirth", $employee["DateOfBirth"])}}">
         <br>
         <label for="locations[]">Locations</label><br>
