@@ -46,7 +46,7 @@ class AddForeignKeys extends Migration
           $table-> dropForeign("employeeX");
       });
       Schema::table('employee_location', function (Blueprint $table) {
-          $table-> dropForeign("employeeX");
+          $table-> dropForeign("employeeL");
           $table-> dropForeign("locationE");
       });
     }
